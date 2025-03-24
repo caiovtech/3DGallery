@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Gallery</title>
-    <link rel="stylesheet" href="css/style-landing-page.css">
+    <title>3D Gallery - Entrar</title>
+    <link rel="stylesheet" href="css/style-login.css">
 </head>
-
 <body>
 
     <header class="cabecalho">
@@ -26,20 +24,22 @@
         </div>
     </header>
 
-    <main class="conteudo-principal">
-        <section class="conteudo-principal-1">
-            <h1 class="paragrafo">Compre, venda e compartilhe modelos 3D <br> numa das maiores galerias de modelagem <br> do mundo!</h1>
-            <button class="botao">Saiba mais!</button>
-        </section>
-        <section class="imagens-3d">
-            <img class="modelo-3d" src="img/casa-3d.jpg">
-        </section>        
+    <main class="container">
+        <form class="area-de-login">
+            <label for="email" class="label-email">Seu e-mail:</label>   
+            <input class ="email" type="email" required>
+
+            <label for="senha" class="label-senha">Sua senha:</label>
+            <input class="senha" type="password" required>
+
+            <button class="botao">Entrar</button>
+
+            <a class="link-esqueceu-senha" href="#">Esqueceu sua senha?</a>
+        </form>
+        <img class="usuario-img" src="img/usuario.png">
     </main>
 
     <footer class="rodape">caiovtech©</footer>
-
+    
 </body>
-
 </html>
-
-<!--Lição aprendida muito importante: a ordem em que as propriedades CSS são feitas, podem alterar o visual da página!-->

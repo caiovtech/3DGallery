@@ -15,7 +15,7 @@ html, body {
 }
 
 body{
-    background: linear-gradient(90deg, rgb(9, 14, 58) 0%, rgba(49,49,85,1) 72%, rgb(52, 118, 172) 100%);
+    background: rgb(50, 64, 107);
 }
 
 main{
@@ -30,9 +30,9 @@ main{
     background: rgba(33, 39, 63);
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid white; 
 }
- 
+
 
 .cabecalho-menu-esquerda{
     display: flex;
@@ -58,60 +58,81 @@ main{
 }
 
 .cabecalho-item{
-    font-size: 22px;
     font-family: "Rethink Sans", sans-serif;
+    font-size: 22px;    
     color: aliceblue;
 }
-    
-.conteudo-principal{ 
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-around;
-}
 
-.conteudo-principal-1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.paragrafo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 32px;
-    font-family: "Rethink Sans", sans-serif;
-    color: aliceblue;
-    margin-left: 150px;
-    margin-bottom: 25px;
-}    
-
-.botao{
-    background-color: rgba(60, 60, 121, 0.445);
-    color: aliceblue;
-    font-size: 20px;
-    font-family: "Rethink Sans", sans-serif;
-    height: 50px;
-    width: 150px; 
-    border-radius: 16px;   
-    margin-left: 150px;
-    cursor: pointer;
-}
-
-.imagens-3d{
+.container{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-right: 150px;
+    justify-content: space-around;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    border: 2px solid aliceblue;
+    border-radius: 30px;
 }
 
-.modelo-3d{
-    width: 520px;
-    border: 1px solid grey;
+.area-de-login{
+    display: flex;
+    flex-direction: column;
+}
+
+.email{
+    width: 230px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.senha{
+    width: 230px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.label-email{
+    font-family: "Rethink Sans", sans-serif;
+    font-size: 18px;
+    color: aliceblue;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.label-senha{
+    font-family: "Rethink Sans", sans-serif;
+    font-size: 18px;
+    color: aliceblue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.botao{
+    font-family: "Rethink Sans", sans-serif;
+    font-size: 20px;
+    margin-top: 35px;
+    width: 230px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.link-esqueceu-senha{
+    font-family: "Rethink Sans", sans-serif;
+    color: aliceblue;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.usuario-img{
+    width: 200px;
+    height: 200px;
+    filter: invert(90%);
 }
 
 .rodape{
@@ -125,5 +146,3 @@ main{
     min-height: 100px;
     border-top: 1px solid white;
 }
-
-    
