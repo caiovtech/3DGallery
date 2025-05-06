@@ -12,6 +12,7 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 body{
@@ -23,6 +24,8 @@ main{
 }
 
 .cabecalho{
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -67,6 +70,8 @@ main{
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
+    margin-top: 14%;
+    margin-bottom: 9%;
 }
 
 .conteudo-principal-1{
@@ -86,7 +91,7 @@ main{
     font-family: "Rethink Sans", sans-serif;
     color: aliceblue;
     margin-left: 150px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }    
 
 .botao{
@@ -110,7 +115,7 @@ main{
 }
 
 .modelo-3d{
-    width: 520px;
+    width: 490px;
     border: 1px solid grey;
 }
 
