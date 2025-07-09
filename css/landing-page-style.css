@@ -65,6 +65,10 @@ main{
     font-family: "Rethink Sans", sans-serif;
     color: aliceblue;
 }
+
+.cabecalho-item:hover{
+    color: rgb(100, 115, 201)
+}
     
 .conteudo-principal{ 
     display: flex;
@@ -101,9 +105,13 @@ main{
     font-family: "Rethink Sans", sans-serif;
     height: 50px;
     width: 150px; 
-    border-radius: 16px;   
+    border-radius: 10px;   
     margin-left: 150px;
     cursor: pointer;
+}
+
+.botao:hover{
+    background-color: rgba(110, 110, 172, 0.445);
 }
 
 .imagens-3d{

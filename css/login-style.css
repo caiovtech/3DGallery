@@ -17,7 +17,7 @@ html, body {
 
 body{
     background:
-    linear-gradient(rgba(48, 48, 105, 1), rgba(5, 5, 27, 0.9)),
+    linear-gradient(rgb(45, 45, 95), rgba(15, 15, 65, 0.8)),
     url('../img/pexels-edward-jenner-4252898.jpg');
     background-size: cover;
 }
@@ -69,18 +69,21 @@ main{
     color: aliceblue;
 }
 
+.cabecalho-item:hover{
+    color: rgb(100, 115, 201)
+}
+
 .container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 12%;
+    margin-top: 13%;
     height: 500px;
-    padding-top: 140px;
-    padding-bottom: 140px;
-    border: 3px solid aliceblue;
+    border: 2.5px solid aliceblue;
     border-radius: 10px;
+    background: linear-gradient(90deg, rgb(15, 21, 78) 0%, rgb(42, 42, 92) 50%, rgb(44, 50, 104) 100%);
 }
 
 .area-de-login{
@@ -88,18 +91,15 @@ main{
     flex-direction: column;
 }
 
-.email{
-    width: 230px;
-    height: 30px;
-    border: 1px solid gray;
-    border-radius: 4px;
-}
-
-.senha{
-    width: 230px;
-    height: 30px;
-    border: 1px solid gray;
-    border-radius: 4px;
+.fazer-login-msg{
+    font-family: "Encode Sans SC", sans-serif;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 420;
+    margin-top: 140px;
+    position: relative;
+    bottom: 60px;
+    right: 30px;
 }
 
 .label-email{
@@ -108,6 +108,20 @@ main{
     color: aliceblue;
     margin-bottom: 5px;
     margin-left: 5px;
+    position: relative;
+    bottom: 35px;
+    right: 30px;
+}
+
+
+.email{
+    width: 230px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    position: relative;
+    bottom: 35px;
+    right: 30px;
 }
 
 .label-senha{
@@ -117,6 +131,19 @@ main{
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+}
+
+.senha{
+    width: 230px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    position: relative;
+    bottom: 30px;
+    right: 30px;
 }
 
 .botao{
@@ -124,8 +151,11 @@ main{
     font-size: 20px;
     margin-top: 35px;
     width: 230px;
-    height: 40px;
+    height: 50px;
     border-radius: 7px;
+    position: relative;
+    bottom: 30px;
+    right: 30px;
 }
 
 .link-esqueceu-senha{
@@ -133,12 +163,17 @@ main{
     color: aliceblue;
     font-size: 15px;
     margin-top: 8px;
+    position: relative;
+    bottom: 30px;
+    right: 30px;
 }
 
 .usuario-img{
     width: 200px;
     height: 200px;
     filter: invert(90%);
+    position: relative;
+    top: 29%;
 }
 
 .links-inferiores{
