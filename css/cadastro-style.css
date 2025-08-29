@@ -46,12 +46,12 @@ main{
     gap: 50px;
 }
 
-.logo{
+.cabecalho-menu-esquerda img{
     width: 70px;
     filter: invert(90%);
 }
 
-.nome-site{
+.cabecalho-menu-esquerda a{
     font-family: "Encode Sans SC", sans-serif;
     color: aliceblue;
     font-size: 40px;
@@ -63,7 +63,7 @@ main{
     gap: 50px;
 }
 
-.cabecalho-item{
+.cabecalho-menu-direita a{
     font-family: "Rethink Sans", sans-serif;
     font-size: 22px;    
     color: aliceblue;
@@ -91,7 +91,7 @@ main{
     flex-direction: column;
 }
 
-.se-cadastrar-msg{
+.area-de-cadastro h1{
     font-family: "Encode Sans SC", sans-serif;
     color: aliceblue;
     font-size: 40px;
@@ -102,18 +102,19 @@ main{
     right: 23px;
 }
 
-.label-nome-usuario{
+.area-de-cadastro label{
     font-family: "Rethink Sans", sans-serif;
     font-size: 18px;
     color: aliceblue;
-    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     margin-left: 5px;
     position: relative;
     bottom: 35px;
     right: 22px;
 }
 
-.nome-usuario{
+.area-de-cadastro input{
     width: 230px;
     height: 30px;
     border: 1px solid gray;
@@ -123,73 +124,10 @@ main{
     right: 22px;
 }
 
-.label-email{
-    font-family: "Rethink Sans", sans-serif;
-    font-size: 18px;
-    color: aliceblue;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    position: relative;
-    bottom: 25px;
-    right: 22px;
-}
-
-.email{
-    width: 230px;
-    height: 30px;
-    border: 1px solid gray;
-    border-radius: 4px;
-    position: relative;
-    bottom: 25px;
-    right: 22px;
-}
-
-.label-senha{
-    font-family: "Rethink Sans", sans-serif;
-    font-size: 18px;
-    color: aliceblue;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    position: relative;
-    bottom: 15px;
-    right: 22px;
-}
-
-.senha{
-    width: 230px;
-    height: 30px;
-    border: 1px solid gray;
-    border-radius: 4px;
-    position: relative;
-    bottom: 15px;
-    right: 22px;
-}
-
-.label-confirma-senha{
-    font-family: "Rethink Sans", sans-serif;
-    font-size: 18px;
-    color: aliceblue;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    position: relative;
-    bottom: 5px;
-    right: 22px;
-}
-
-.confirma-senha{
-    width: 230px;
-    height: 30px;
-    border: 1px solid gray;
-    border-radius: 4px;
-    position: relative;
-    bottom: 5px;
-    right: 22px;
-}
-
-.botao{
+.area-de-cadastro button{
     font-family: "Rethink Sans", sans-serif;
     font-size: 20px;
-    margin-top: 35px;
+    margin-top: 10px;
     width: 230px;
     height: 50px;
     border-radius: 7px;
@@ -198,7 +136,7 @@ main{
     right: 22px;
 }
 
-.cadastro-img{
+.container img{
     width: 200px;
     height: 200px;
     filter: invert(90%);
