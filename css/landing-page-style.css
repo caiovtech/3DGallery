@@ -8,11 +8,10 @@
     text-decoration: none;
 }
 
-html,
-body {
-    height: 100%;
+html, body {
     display: flex;
     flex-direction: column;
+    height: 100%;
     overflow-x: hidden;
 }
 
@@ -36,7 +35,6 @@ main {
     padding-bottom: 10px;
     border-bottom: 1px solid white;
 }
-
 
 .cabecalho-menu-esquerda {
     display: flex;
@@ -67,7 +65,7 @@ main {
     color: aliceblue;
 }
 
-.cabecalho-item:hover {
+.cabecalho-menu-direita a:hover {
     color: rgb(100, 115, 201)
 }
 
@@ -112,7 +110,7 @@ main {
     cursor: pointer;
 }
 
-.botao:hover {
+.conteudo-principal button:hover {
     background-color: rgba(110, 110, 172, 0.445);
 }
 
@@ -124,7 +122,7 @@ main {
     margin-right: 150px;
 }
 
-.imagens-3d img{
+.imagens-3d img {
     width: 490px;
     border: 1px solid grey;
 }
