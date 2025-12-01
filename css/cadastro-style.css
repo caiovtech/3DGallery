@@ -8,7 +8,8 @@
     text-decoration: none;
 }
 
-html, body {
+html,
+body {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -37,39 +38,39 @@ main {
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid white;
-}
 
-.cabecalho-menu-esquerda {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
+    .cabecalho-menu-esquerda {
+        display: flex;
+        align-items: center;
+        gap: 50px;
 
-.cabecalho-menu-esquerda img {
-    width: 70px;
-    filter: invert(90%);
-}
+        img {
+            width: 70px;
+            filter: invert(90%);
+        }
 
-.cabecalho-menu-esquerda a {
-    font-family: "Encode Sans SC", sans-serif;
-    color: aliceblue;
-    font-size: 40px;
-}
+        a {
+            font-family: "Encode Sans SC", sans-serif;
+            color: aliceblue;
+            font-size: 40px;
+        }
+    }
 
-.cabecalho-menu-direita {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
+    .cabecalho-menu-direita {
+        display: flex;
+        align-items: center;
+        gap: 50px;
 
-.cabecalho-menu-direita a {
-    font-family: "Rethink Sans", sans-serif;
-    font-size: 22px;
-    color: aliceblue;
-}
+        a {
+            font-family: "Rethink Sans", sans-serif;
+            font-size: 22px;
+            color: aliceblue;
+        }
 
-.cabecalho-menu-direita a:hover {
-    color: rgb(100, 115, 201)
+        a:hover {
+            color: rgb(100, 115, 201)
+        }
+    }
 }
 
 .container {
@@ -83,61 +84,61 @@ main {
     border: 2.5px solid aliceblue;
     border-radius: 10px;
     background: linear-gradient(90deg, rgb(15, 21, 78) 0%, rgb(42, 42, 92) 50%, rgb(44, 50, 104) 100%);
-}
 
-.area-de-cadastro {
-    display: flex;
-    flex-direction: column;
-}
+    .area-de-cadastro {
+        display: flex;
+        flex-direction: column;
 
-.area-de-cadastro h1 {
-    font-family: "Encode Sans SC", sans-serif;
-    color: aliceblue;
-    font-size: 40px;
-    font-weight: 420;
-    margin-top: 140px;
-    position: relative;
-    bottom: 60px;
-    right: 23px;
-}
+        h1 {
+            font-family: "Encode Sans SC", sans-serif;
+            color: aliceblue;
+            font-size: 40px;
+            font-weight: 420;
+            margin-top: 140px;
+            position: relative;
+            bottom: 60px;
+            right: 23px;
+        }
 
-.area-de-cadastro label {
-    font-family: "Rethink Sans", sans-serif;
-    font-size: 18px;
-    color: aliceblue;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    position: relative;
-    bottom: 35px;
-    right: 22px;
-}
+        label {
+            font-family: "Rethink Sans", sans-serif;
+            font-size: 18px;
+            color: aliceblue;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            position: relative;
+            bottom: 35px;
+            right: 22px;
+        }
 
-.area-de-cadastro input {
-    width: 230px;
-    height: 30px;
-    border: 1px solid gray;
-    border-radius: 2px;
-    position: relative;
-    bottom: 35px;
-    right: 22px;
-}
+        input {
+            width: 230px;
+            height: 30px;
+            border: 1px solid gray;
+            border-radius: 2px;
+            position: relative;
+            bottom: 35px;
+            right: 22px;
+        }
 
-.area-de-cadastro button {
-    font-family: "Rethink Sans", sans-serif;
-    font-size: 20px;
-    margin-top: 10px;
-    width: 230px;
-    height: 50px;
-    border-radius: 7px;
-    position: relative;
-    bottom: 10px;
-    right: 22px;
-}
+        button {
+            font-family: "Rethink Sans", sans-serif;
+            font-size: 20px;
+            margin-top: 10px;
+            width: 230px;
+            height: 50px;
+            border-radius: 7px;
+            position: relative;
+            bottom: 10px;
+            right: 22px;
+        }
+    }
 
-.container img {
-    width: 200px;
-    height: 200px;
-    filter: invert(90%);
-    position: relative;
-    top: 32%;
+    img {
+        width: 200px;
+        height: 200px;
+        filter: invert(90%);
+        position: relative;
+        top: 32%;
+    }
 }

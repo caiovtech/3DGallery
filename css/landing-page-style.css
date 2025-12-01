@@ -8,7 +8,8 @@
     text-decoration: none;
 }
 
-html, body {
+html,
+body {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -34,39 +35,39 @@ main {
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid white;
-}
 
-.cabecalho-menu-esquerda {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
+    .cabecalho-menu-esquerda {
+        display: flex;
+        align-items: center;
+        gap: 50px;
 
-.cabecalho-menu-esquerda img {
-    width: 70px;
-    filter: invert(90%);
-}
+        img {
+            width: 70px;
+            filter: invert(90%);
+        }
 
-.cabecalho-menu-esquerda a {
-    font-family: "Encode Sans SC", sans-serif;
-    color: aliceblue;
-    font-size: 40px;
-}
+        a {
+            font-family: "Encode Sans SC", sans-serif;
+            color: aliceblue;
+            font-size: 40px;
+        }
+    }
 
-.cabecalho-menu-direita {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
+    .cabecalho-menu-direita {
+        display: flex;
+        align-items: center;
+        gap: 50px;
 
-.cabecalho-menu-direita a {
-    font-size: 22px;
-    font-family: "Rethink Sans", sans-serif;
-    color: aliceblue;
-}
+        a {
+            font-size: 22px;
+            font-family: "Rethink Sans", sans-serif;
+            color: aliceblue;
+        }
 
-.cabecalho-menu-direita a:hover {
-    color: rgb(100, 115, 201)
+        a:hover {
+            color: rgb(100, 115, 201);
+        }
+    }
 }
 
 .conteudo-principal {
@@ -75,43 +76,43 @@ main {
     justify-content: space-around;
     margin-top: 14%;
     margin-bottom: 9%;
-}
 
-.conteudo-principal section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 
-.conteudo-principal h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 32px;
-    font-family: "Rethink Sans", sans-serif;
-    color: aliceblue;
-    margin-left: 150px;
-    margin-bottom: 10px;
-}
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 32px;
+        font-family: "Rethink Sans", sans-serif;
+        color: aliceblue;
+        margin-left: 150px;
+        margin-bottom: 10px;
+    }
 
-.conteudo-principal button {
-    background-color: rgba(60, 60, 121, 0.445);
-    color: aliceblue;
-    font-size: 20px;
-    font-family: "Rethink Sans", sans-serif;
-    height: 50px;
-    width: 150px;
-    border: 1.5px solid whitesmoke;
-    border-radius: 10px;
-    margin-left: 150px;
-    cursor: pointer;
-}
+    button {
+        background-color: rgba(60, 60, 121, 0.445);
+        color: aliceblue;
+        font-size: 20px;
+        font-family: "Rethink Sans", sans-serif;
+        height: 50px;
+        width: 150px;
+        border: 1.5px solid whitesmoke;
+        border-radius: 10px;
+        margin-left: 150px;
+        cursor: pointer;
+    }
 
-.conteudo-principal button:hover {
-    background-color: rgba(110, 110, 172, 0.445);
+    button:hover {
+        background-color: rgba(110, 110, 172, 0.445);
+    }
 }
 
 .imagens-3d {
@@ -120,11 +121,11 @@ main {
     align-items: center;
     justify-content: center;
     margin-right: 150px;
-}
 
-.imagens-3d img {
-    width: 490px;
-    border: 1px solid grey;
+    img {
+        width: 490px;
+        border: 2px solid grey;
+    }
 }
 
 .destaques {
@@ -133,35 +134,35 @@ main {
     border-top: 3.5px solid white;
     margin-left: 10%;
     margin-right: 10%;
-}
 
-.destaques-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2.5px solid white;
-    border-radius: 10px;
-    height: 300px;
-    width: 450px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+    .destaques-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2.5px solid white;
+        border-radius: 10px;
+        height: 300px;
+        width: 450px;
+        margin-top: 100px;
+        margin-bottom: 100px;
 
-.destaques-item h1 {
-    font-family: "Rethink Sans", sans-serif;
-    color: aliceblue;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
+        h1 {
+            font-family: "Rethink Sans", sans-serif;
+            color: aliceblue;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
 
-.destaques-item p {
-    font-family: "Rethink Sans", sans-serif;
-    color: aliceblue;
-    font-size: 18px;
-    text-align: center;
-    margin-left: 12px;
-    margin-right: 12px;
+        p {
+            font-family: "Rethink Sans", sans-serif;
+            color: aliceblue;
+            font-size: 18px;
+            text-align: center;
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+    }
 }
 
 .rodape {
