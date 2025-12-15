@@ -17,14 +17,7 @@ body {
 }
 
 body {
-    background:
-        linear-gradient(rgb(45, 45, 95), rgba(15, 15, 65, 0.8)),
-        url('../img/pexels-edward-jenner-4252898.jpg');
-    background-size: cover;
-}
-
-main {
-    flex: 0 1 auto;
+    background: #121212;
 }
 
 .cabecalho {
@@ -34,10 +27,10 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background: rgba(33, 39, 63);
+    background: #1E1E1E;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #282828;
 
     .cabecalho-menu-esquerda {
         display: flex;
@@ -51,7 +44,7 @@ main {
 
         a {
             font-family: "Encode Sans SC", sans-serif;
-            color: aliceblue;
+            color: #EAEAEA;
             font-size: 40px;
         }
     }
@@ -62,83 +55,127 @@ main {
         gap: 50px;
 
         a {
-            font-family: "Rethink Sans", sans-serif;
             font-size: 22px;
-            color: aliceblue;
+            font-family: "Rethink Sans", sans-serif;
+            color: #EAEAEA;
         }
 
         a:hover {
-            color: rgb(100, 115, 201)
+            color: #6A0DAD;
         }
     }
 }
 
-.container {
+main {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-left: 22%;
-    margin-right: 22%;
-    margin-top: 11.7%;
-    height: 600px;
-    border: 2.5px solid aliceblue;
-    border-radius: 10px;
-    background: linear-gradient(90deg, rgb(15, 21, 78) 0%, rgb(42, 42, 92) 50%, rgb(44, 50, 104) 100%);
+    flex: 1;
 
-    .area-de-cadastro {
+    .container-esquerda {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        border-right: 2px solid #282828;
+
+        img {
+            filter: invert(90%);
+            width: 150px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
 
         h1 {
             font-family: "Encode Sans SC", sans-serif;
-            color: aliceblue;
-            font-size: 40px;
-            font-weight: 420;
-            margin-top: 140px;
-            position: relative;
-            bottom: 60px;
-            right: 23px;
-        }
-
-        label {
-            font-family: "Rethink Sans", sans-serif;
-            font-size: 18px;
-            color: aliceblue;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            position: relative;
-            bottom: 35px;
-            right: 22px;
-        }
-
-        input {
-            width: 230px;
-            height: 30px;
-            border: 1px solid gray;
-            border-radius: 2px;
-            position: relative;
-            bottom: 35px;
-            right: 22px;
-        }
-
-        button {
-            font-family: "Rethink Sans", sans-serif;
-            font-size: 20px;
-            margin-top: 10px;
-            width: 230px;
-            height: 50px;
-            border-radius: 7px;
-            position: relative;
-            bottom: 10px;
-            right: 22px;
+            color: #EAEAEA;
+            font-size: 33px;
+            font-weight: 400;
         }
     }
 
-    img {
-        width: 200px;
-        height: 200px;
-        filter: invert(90%);
-        position: relative;
-        top: 32%;
+    .container-direita {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #1E1E1E;
+        background-size: cover;
+        width: 60%;
+
+        .area-de-cadastro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+            width: 62%;
+            border: 2.5px solid #282828;
+            border-radius: 25px;
+            gap: 15px;
+
+            h1 {
+                font-family: "Encode Sans SC", sans-serif;
+                color: #EAEAEA;
+                font-size: 40px;
+                font-weight: 420;
+            }
+
+            input {
+                width: 230px;
+                height: 35px;
+                border: 1px solid #282828;
+                border-radius: 5px;
+                background-color: #1E1E1E;
+                color: #EAEAEA;
+                padding: 0 10px;
+            }
+
+            button {
+                font-family: "Rethink Sans", sans-serif;
+                font-size: 20px;
+                width: 230px;
+                height: 50px;
+                background-color: #6A0DAD;
+                color: #EAEAEA;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            button:hover {
+                background-color: #8A2BE2;
+            }
+
+            a {
+                font-family: "Rethink Sans", sans-serif;
+                color: #EAEAEA;
+                font-size: 15px;
+                margin-top: 8px;
+            }
+        }
+
+        .links-inferiores {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 10px;
+
+            a {
+                font-family: "Rethink Sans", sans-serif;
+                color: #EAEAEA;
+                font-size: 15px;
+                margin-top: 10px;
+                width: 95px;
+                text-align: center;
+            }
+
+            a:hover {
+                background: #2a2a2a;
+                color: #6A0DAD;
+                border-radius: 5px;
+            }
+        }
     }
 }

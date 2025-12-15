@@ -17,17 +17,14 @@ body {
 }
 
 body {
-    background:
-        linear-gradient(rgb(45, 45, 95), rgba(15, 15, 65, 0.4)),
-        url('../img/cena-de-fantasia-em-3d.jpg');
-    background-size: cover;
+    background: #121212;
 
     h1 {
         margin-top: 200px;
         text-align: center;
         font-family: "Encode Sans SC", sans-serif;
         font-weight: 450;
-        color: aliceblue;
+        color: #EAEAEA;
         font-size: 60px;
     }
 }
@@ -44,10 +41,10 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background: rgba(33, 39, 63);
+    background: #1E1E1E;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #282828;
 
     .cabecalho-menu-esquerda {
         display: flex;
@@ -61,7 +58,7 @@ main {
 
         a {
             font-family: "Encode Sans SC", sans-serif;
-            color: aliceblue;
+            color: #EAEAEA;
             font-size: 40px;
         }
     }
@@ -74,11 +71,11 @@ main {
         a {
             font-family: "Rethink Sans", sans-serif;
             font-size: 22px;
-            color: aliceblue;
+            color: #EAEAEA;
         }
 
         a:hover {
-            color: rgb(100, 115, 201)
+            color: #6A0DAD;
         }
     }
 }
@@ -99,18 +96,18 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid aliceblue;
+        border: 2px solid #282828;
         border-radius: 8px;
         height: 230px;
         width: 450px;
         margin-left: 30px;
         margin-right: 30px;
         margin-bottom: 30px;
-        color: aliceblue;
+        color: #EAEAEA;
         font-family: "Rethink Sans", sans-serif;
         font-size: 22px;
         font-weight: 600;
-        background-color: rgba(18, 32, 80, 0.800);
+        background-color: #1E1E1E;
         box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.2);
     }
 

@@ -26,28 +26,35 @@
         </div>
     </header>
 
-    <!--Container da área de cadastro-->
-    <main class="container">
-        <form class="area-de-cadastro">
-            <h1>Se cadastrar</h1>
+    <main>
 
-            <label for="nome-usuario" class="label-nome-usuario">Crie um nome de usuário:</label>
-            <input class="nome-usuario" required>
+        <!--Parte esquerda do main-->
+        <section class="container-esquerda">
+            <img src="/img/formulario.png">
+            <h1>Criar Conta</h1>
+        </section>
 
-            <label for="e-mail" class="label-email">Informe seu e-mail:</label>
-            <input class="email" type="email" required>
+        <!--Parte direita do main-->
+        <section class="container-direita">
+            <form class="area-de-cadastro">
+                <input placeholder="Nome de usuário" class="nome-usuario" required>
 
-            <label for="senha" class="label-senha">Crie uma senha:</label>
-            <input class="senha" type="password" required>
+                <input placeholder="E-mail" class="email" type="email" required>
 
-            <label for="confirma-senha" class="label-confirma-senha">Repita sua senha:</label>
-            <input class="confirma-senha" type="password" required>
+                <input placeholder="Senha" class="senha" type="password" required>
 
-            <button>Cadastrar-se</button>
+                <input placeholder="Confirmar senha" class="confirma-senha" type="password" required>
 
-        </form>
+                <button>Criar Conta</button>
 
-        <img src="img/formulario.png">
+            </form>
+
+            <div class="links-inferiores">
+                <a href="#">Ajuda</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+            </div>
+        </section>
     </main>
 
 </body>

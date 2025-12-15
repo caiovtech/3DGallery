@@ -26,31 +26,33 @@
         </div>
     </header>
 
-    <!--Container da área de login-->
-    <main class="container">
-        <form class="area-de-login">
-            <h1>Fazer login</h1>
+    <main>
 
-            <label for="email" class="label-email">Seu e-mail:</label>
-            <input class="email" type="email" required>
+        <!--Parte esquerda do main-->
+        <section class="container-esquerda">
+            <img src="/img/usuario.png">
+            <h1>Fazer Login</h1>
+        </section>
 
-            <label for="senha" class="label-senha">Sua senha:</label>
-            <input class="senha" type="password" required>
+        <!--Parte direita do main-->
+        <section class="container-direita">
+            <form class="area-de-login">
+                <input placeholder="E-mail" class="email" type="email" required>
 
-            <button>Entrar</button>
+                <input placeholder="Senha" class="senha" type="password" required>
 
-            <a href="#">Esqueceu sua senha?</a>
-        </form>
+                <button>Entrar</button>
 
-        <img src="img/usuario.png">
+                <a href="#">Esqueceu sua senha?</a>
+            </form>
+
+            <div class="links-inferiores">
+                <a href="#">Ajuda</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+            </div>
+        </section>
     </main>
-
-    <!--Links abaixo do container da área de login-->
-    <div class="links-inferiores">
-        <a href="#">Ajuda</a>
-        <a href="#">Privacidade</a>
-        <a href="#">Termos</a>
-    </div>
 
 </body>
 

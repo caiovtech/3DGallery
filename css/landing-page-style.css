@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background: linear-gradient(45deg, rgb(9, 14, 58) 0%, rgba(49, 49, 85, 1) 62%, rgb(52, 118, 172) 100%);
+    background: #121212;
 }
 
 main {
@@ -31,10 +31,10 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background: rgba(33, 39, 63);
+    background: #1E1E1E;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #282828;
 
     .cabecalho-menu-esquerda {
         display: flex;
@@ -48,7 +48,7 @@ main {
 
         a {
             font-family: "Encode Sans SC", sans-serif;
-            color: aliceblue;
+            color: #EAEAEA;
             font-size: 40px;
         }
     }
@@ -61,11 +61,11 @@ main {
         a {
             font-size: 22px;
             font-family: "Rethink Sans", sans-serif;
-            color: aliceblue;
+            color: #EAEAEA;
         }
 
         a:hover {
-            color: rgb(100, 115, 201);
+            color: #6A0DAD;
         }
     }
 }
@@ -92,26 +92,27 @@ main {
         text-align: center;
         font-size: 32px;
         font-family: "Rethink Sans", sans-serif;
-        color: aliceblue;
+        color: #EAEAEA;
         margin-left: 150px;
         margin-bottom: 10px;
     }
 
     button {
-        background-color: rgba(60, 60, 121, 0.445);
-        color: aliceblue;
+        background-color: #6A0DAD;
+        color: #EAEAEA;
         font-size: 20px;
         font-family: "Rethink Sans", sans-serif;
         height: 50px;
         width: 150px;
-        border: 1.5px solid whitesmoke;
+        border: none;
         border-radius: 10px;
         margin-left: 150px;
         cursor: pointer;
+        transition: background-color 0.3s;
     }
 
     button:hover {
-        background-color: rgba(110, 110, 172, 0.445);
+        background-color: #8A2BE2;
     }
 }
 
@@ -124,14 +125,14 @@ main {
 
     img {
         width: 490px;
-        border: 2px solid grey;
+        border: 2px solid #282828;
     }
 }
 
 .destaques {
     display: flex;
     justify-content: space-around;
-    border-top: 3.5px solid white;
+    border-top: 3.5px solid #282828;
     margin-left: 10%;
     margin-right: 10%;
 
@@ -140,7 +141,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 2.5px solid white;
+        border: 2.5px solid #282828;
         border-radius: 10px;
         height: 300px;
         width: 450px;
@@ -149,14 +150,14 @@ main {
 
         h1 {
             font-family: "Rethink Sans", sans-serif;
-            color: aliceblue;
+            color: #EAEAEA;
             font-size: 25px;
             margin-bottom: 20px;
         }
 
         p {
             font-family: "Rethink Sans", sans-serif;
-            color: aliceblue;
+            color: #EAEAEA;
             font-size: 18px;
             text-align: center;
             margin-left: 12px;
@@ -171,8 +172,8 @@ main {
     justify-content: center;
     font-size: 25px;
     font-family: "Encode Sans SC", sans-serif;
-    color: aliceblue;
-    background: rgba(33, 39, 63);
+    color: #EAEAEA;
+    background: #1E1E1E;
     min-height: 100px;
-    border-top: 1px solid white;
+    border-top: 1px solid #282828;
 }
