@@ -108,8 +108,9 @@ main {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 60%;
-            width: 62%;
+            height: 50%;
+            width: 60%;
+            margin-top: 5%;
             border: 2.5px solid #282828;
             border-radius: 25px;
             gap: 15px;
@@ -173,7 +174,7 @@ main {
 
             a:hover {
                 background: #2a2a2a;
-                color: #6A0DAD;
+                color: #b26be4;
                 border-radius: 5px;
             }
         }
