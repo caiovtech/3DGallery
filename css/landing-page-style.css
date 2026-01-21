@@ -65,7 +65,7 @@ main {
         }
 
         a:hover {
-            color: #6A0DAD;
+            color: #b26be4;
         }
     }
 }
@@ -176,4 +176,228 @@ main {
     background: #1E1E1E;
     min-height: 100px;
     border-top: 1px solid #282828;
+}
+
+.conteudo-responsivo {
+    display: none;
+}
+
+/* Resolução 1600x900px */
+
+@media (max-width: 1600px) {
+    .cabecalho {
+        .cabecalho-menu-esquerda {
+            img {
+                width: 55px;
+            }
+
+            a {
+                font-family: "Encode Sans SC", sans-serif;
+                color: #EAEAEA;
+                font-size: 33px;
+            }
+        }
+
+        .cabecalho-menu-direita {
+            a {
+                font-size: 21px;
+                font-family: "Rethink Sans", sans-serif;
+                color: #EAEAEA;
+            }
+        }
+    }
+
+    .conteudo-principal {
+        section {
+            h1 {
+                font-size: 25px;
+            }
+        }
+
+        button {
+            font-size: 17px;
+            height: 47px;
+            width: 135px;
+        }
+    }
+
+    .imagens-3d {
+        img {
+            width: 420px;
+        }
+    }
+
+    .destaques {
+        .destaques-item {
+            height: 250px;
+            width: 400px;
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .rodape {
+        min-height: 80px;
+        font-size: 22px;
+    }
+
+    .conteudo-responsivo {
+        display: none;
+    }
+}
+
+/* Resolução 1280x720px */
+
+@media (max-width: 1280px) {
+    .cabecalho {
+        .cabecalho-menu-esquerda {
+            img {
+                width: 45px;
+            }
+
+            a {
+                font-family: "Encode Sans SC", sans-serif;
+                color: #EAEAEA;
+                font-size: 27px;
+            }
+        }
+
+        .cabecalho-menu-direita {
+            a {
+                font-size: 18px;
+                font-family: "Rethink Sans", sans-serif;
+                color: #EAEAEA;
+            }
+        }
+    }
+
+    .conteudo-principal {
+        section {
+            h1 {
+                font-size: 20px;
+            }
+        }
+
+        button {
+            font-size: 15px;
+            height: 38px;
+            width: 105px;
+        }
+    }
+
+    .imagens-3d {
+        img {
+            width: 330px;
+        }
+    }
+
+    .destaques {
+        .destaques-item {
+            height: 210px;
+            width: 320px;
+
+            h1 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .rodape {
+        min-height: 70px;
+        font-size: 17px;
+    }
+
+    .conteudo-responsivo {
+        display: none;
+    }
+}
+
+/* Resolução Mobile */
+
+@media (max-width: 450px) {
+    body {
+        background-image: url(../img/pexels-edward-jenner-4252664.jpg);
+        background-color: #121212e8;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-blend-mode: multiply;
+        min-height: 100vh;
+    }
+
+    .cabecalho {
+        .cabecalho-menu-esquerda {
+            img {
+                display: none;
+            }
+
+            a {
+                font-size: 1.5rem;
+            }
+        }
+
+        .cabecalho-menu-direita {
+            display: none;
+        }
+    }
+
+    .conteudo-principal {
+        display: none;
+    }
+
+    .destaques {
+        display: none;
+    }
+
+    .conteudo-responsivo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        width: 100%;
+
+        img {
+            width: 40%;
+        }
+
+        h1 {
+            font-family: "Rethink Sans", sans-serif;
+            color: #EAEAEA;
+            font-size: 1.2rem;
+            margin-top: 20%;
+            margin-bottom: 20%;
+        }
+
+        button {
+            background-color: #6A0DAD;
+            color: #EAEAEA;
+            font-size: 15px;
+            font-family: "Rethink Sans", sans-serif;
+            height: 45px;
+            width: 48%;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    }
+
+    .rodape {
+        height: auto;
+        min-height: 40px;
+        position: static;
+        font-size: 14px;
+        background: transparent;
+    }
 }
