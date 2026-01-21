@@ -391,6 +391,10 @@ main {
             cursor: pointer;
             transition: background-color 0.3s;
         }
+
+        button:hover {
+            background-color: #8A2BE2;
+        }
     }
 
     .rodape {
