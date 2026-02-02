@@ -20,11 +20,7 @@ body {
     background: #121212;
 }
 
-main {
-    flex: 1;
-}
-
-.cabecalho {
+header {
     position: fixed;
     width: 100%;
     display: flex;
@@ -70,103 +66,107 @@ main {
     }
 }
 
-.conteudo-principal {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-around;
-    margin-top: 14%;
-    margin-bottom: 9%;
+main {
+    flex: 1;
 
-    section {
+    .hero {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
+        flex-grow: 1;
+        justify-content: space-around;
+        margin-top: 14%;
+        margin-bottom: 9%;
 
-    h1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 32px;
-        font-family: "Rethink Sans", sans-serif;
-        color: #EAEAEA;
-        margin-left: 150px;
-        margin-bottom: 10px;
-    }
-
-    button {
-        background-color: #6A0DAD;
-        color: #EAEAEA;
-        font-size: 20px;
-        font-family: "Rethink Sans", sans-serif;
-        height: 50px;
-        width: 150px;
-        border: none;
-        border-radius: 10px;
-        margin-left: 150px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    button:hover {
-        background-color: #8A2BE2;
-    }
-}
-
-.imagens-3d {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-right: 150px;
-
-    img {
-        width: 490px;
-        border: 2px solid #282828;
-    }
-}
-
-.destaques {
-    display: flex;
-    justify-content: space-around;
-    border-top: 3.5px solid #282828;
-    margin-left: 10%;
-    margin-right: 10%;
-
-    .destaques-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 2.5px solid #282828;
-        border-radius: 10px;
-        height: 300px;
-        width: 450px;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        .textos-esquerda {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
 
         h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 32px;
             font-family: "Rethink Sans", sans-serif;
             color: #EAEAEA;
-            font-size: 25px;
-            margin-bottom: 20px;
+            margin-left: 150px;
+            margin-bottom: 10px;
         }
 
-        p {
-            font-family: "Rethink Sans", sans-serif;
+        button {
+            background-color: #6A0DAD;
             color: #EAEAEA;
-            font-size: 18px;
-            text-align: center;
-            margin-left: 12px;
-            margin-right: 12px;
+            font-size: 20px;
+            font-family: "Rethink Sans", sans-serif;
+            height: 50px;
+            width: 150px;
+            border: none;
+            border-radius: 10px;
+            margin-left: 150px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #8A2BE2;
+        }
+    }
+
+    .imagens-3d {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 150px;
+
+        img {
+            width: 490px;
+            border: 2px solid #282828;
+        }
+    }
+
+    .destaques {
+        display: flex;
+        justify-content: space-around;
+        border-top: 3.5px solid #282828;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        .destaques-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2.5px solid #282828;
+            border-radius: 10px;
+            height: 300px;
+            width: 450px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+            h1 {
+                font-family: "Rethink Sans", sans-serif;
+                color: #EAEAEA;
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-family: "Rethink Sans", sans-serif;
+                color: #EAEAEA;
+                font-size: 18px;
+                text-align: center;
+                margin-left: 12px;
+                margin-right: 12px;
+            }
         }
     }
 }
 
-.rodape {
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,7 +185,7 @@ main {
 /* Resolução 1600x900px */
 
 @media (max-width: 1600px) {
-    .cabecalho {
+    header {
         .cabecalho-menu-esquerda {
             img {
                 width: 55px;
@@ -207,42 +207,44 @@ main {
         }
     }
 
-    .conteudo-principal {
-        section {
-            h1 {
-                font-size: 25px;
+    main {
+        .hero {
+            .textos-esquerda {
+                h1 {
+                    font-size: 25px;
+                }
+            }
+
+            button {
+                font-size: 17px;
+                height: 47px;
+                width: 135px;
             }
         }
 
-        button {
-            font-size: 17px;
-            height: 47px;
-            width: 135px;
-        }
-    }
-
-    .imagens-3d {
-        img {
-            width: 420px;
-        }
-    }
-
-    .destaques {
-        .destaques-item {
-            height: 250px;
-            width: 400px;
-
-            h1 {
-                font-size: 20px;
+        .imagens-3d {
+            img {
+                width: 420px;
             }
+        }
 
-            p {
-                font-size: 15px;
+        .destaques {
+            .destaques-item {
+                height: 250px;
+                width: 400px;
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
             }
         }
     }
 
-    .rodape {
+    footer {
         min-height: 80px;
         font-size: 22px;
     }
@@ -255,7 +257,7 @@ main {
 /* Resolução 1280x720px */
 
 @media (max-width: 1280px) {
-    .cabecalho {
+    header {
         .cabecalho-menu-esquerda {
             img {
                 width: 45px;
@@ -277,42 +279,44 @@ main {
         }
     }
 
-    .conteudo-principal {
-        section {
-            h1 {
-                font-size: 20px;
+    main {
+        .hero {
+            .textos-esquerda {
+                h1 {
+                    font-size: 20px;
+                }
+            }
+
+            button {
+                font-size: 15px;
+                height: 38px;
+                width: 105px;
             }
         }
 
-        button {
-            font-size: 15px;
-            height: 38px;
-            width: 105px;
-        }
-    }
-
-    .imagens-3d {
-        img {
-            width: 330px;
-        }
-    }
-
-    .destaques {
-        .destaques-item {
-            height: 210px;
-            width: 320px;
-
-            h1 {
-                font-size: 16px;
+        .imagens-3d {
+            img {
+                width: 330px;
             }
+        }
 
-            p {
-                font-size: 14px;
+        .destaques {
+            .destaques-item {
+                height: 210px;
+                width: 320px;
+
+                h1 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
             }
         }
     }
 
-    .rodape {
+    footer {
         min-height: 70px;
         font-size: 17px;
     }
@@ -335,7 +339,7 @@ main {
         min-height: 100vh;
     }
 
-    .cabecalho {
+    header {
         .cabecalho-menu-esquerda {
             img {
                 display: none;
@@ -351,57 +355,61 @@ main {
         }
     }
 
-    .conteudo-principal {
-        display: none;
-    }
+    main {
 
-    .destaques {
-        display: none;
-    }
-
-    .conteudo-responsivo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex: 1;
-        width: 100%;
-
-        img {
-            width: 40%;
+        .hero {
+            display: none;
         }
 
-        h1 {
-            font-family: "Rethink Sans", sans-serif;
-            color: #EAEAEA;
-            font-size: 1.2rem;
-            margin-top: 20%;
-            margin-bottom: 20%;
+        .destaques {
+            display: none;
         }
 
-        button {
-            background-color: #6A0DAD;
-            color: #EAEAEA;
-            font-size: 15px;
-            font-family: "Rethink Sans", sans-serif;
-            height: 45px;
-            width: 48%;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s;
+        .conteudo-responsivo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            width: 100%;
+            margin-top: 35%;
+
+            img {
+                width: 40%;
+            }
+
+            h1 {
+                font-family: "Rethink Sans", sans-serif;
+                color: #EAEAEA;
+                font-size: 1.2rem;
+                margin-top: 20%;
+                margin-bottom: 20%;
+            }
+
+            button {
+                background-color: #6A0DAD;
+                color: #EAEAEA;
+                font-size: 15px;
+                font-family: "Rethink Sans", sans-serif;
+                height: 45px;
+                width: 48%;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            button:hover {
+                background-color: #8A2BE2;
+            }
         }
 
-        button:hover {
-            background-color: #8A2BE2;
+        footer {
+            height: auto;
+            min-height: 40px;
+            position: static;
+            font-size: 14px;
+            background: transparent;
         }
-    }
-
-    .rodape {
-        height: auto;
-        min-height: 40px;
-        position: static;
-        font-size: 14px;
-        background: transparent;
     }
 }
