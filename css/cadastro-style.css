@@ -20,7 +20,7 @@ body {
     background: #121212;
 }
 
-.cabecalho {
+header {
     position: fixed;
     width: 100%;
     display: flex;
