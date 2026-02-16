@@ -36,6 +36,7 @@ header {
         display: flex;
         align-items: center;
         gap: 50px;
+        transform: translateX(-30%);
 
         img {
             width: 70px;
@@ -53,6 +54,7 @@ header {
         display: flex;
         align-items: center;
         gap: 50px;
+        transform: translateX(30%);
 
         a {
             font-size: 22px;
@@ -63,6 +65,15 @@ header {
         a:hover {
             color: #b26be4;
         }
+    }
+
+    .menu-hamburguer {
+        display: none;
+        background: none;
+        border: none;
+        color: #EAEAEA;
+        font-size: 30px;
+        cursor: pointer;
     }
 }
 

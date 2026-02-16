@@ -36,6 +36,7 @@ header {
         display: flex;
         align-items: center;
         gap: 50px;
+        transform: translateX(-30%);
 
         img {
             width: 70px;
@@ -53,6 +54,7 @@ header {
         display: flex;
         align-items: center;
         gap: 50px;
+        transform: translateX(30%);
 
         a {
             font-size: 22px;
@@ -63,6 +65,16 @@ header {
         a:hover {
             color: #b26be4;
         }
+    }
+
+    .menu-hamburguer {
+        display: none;
+        background: none;
+        border: none;
+        color: #EAEAEA;
+        font-size: 30px;
+        cursor: pointer;
+        transform: translateX(95%);
     }
 }
 
@@ -83,7 +95,7 @@ main {
             align-items: center;
             gap: 20px;
 
-            h1 {
+            h2 {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -113,19 +125,23 @@ main {
                 background-color: #8A2BE2;
             }
         }
+
+        .imagens-3d {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-right: 150px;
+
+            img {
+                width: 490px;
+                border: 2px solid #282828;
+            }
+        }
     }
 
-    .imagens-3d {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-right: 150px;
-
-        img {
-            width: 490px;
-            border: 2px solid #282828;
-        }
+    .conteudo-mobile {
+        display: none;
     }
 
     .destaques {
@@ -147,7 +163,7 @@ main {
             margin-top: 100px;
             margin-bottom: 100px;
 
-            h1 {
+            h3 {
                 font-family: "Rethink Sans", sans-serif;
                 color: #EAEAEA;
                 font-size: 25px;
@@ -178,10 +194,6 @@ footer {
     border-top: 1px solid #282828;
 }
 
-.conteudo-responsivo {
-    display: none;
-}
-
 /* Resolução 1600x900px */
 
 @media (max-width: 1600px) {
@@ -210,7 +222,7 @@ footer {
     main {
         .hero {
             .textos-esquerda {
-                h1 {
+                h2 {
                     font-size: 25px;
                 }
 
@@ -233,7 +245,7 @@ footer {
                 height: 250px;
                 width: 400px;
 
-                h1 {
+                h3 {
                     font-size: 20px;
                 }
 
@@ -282,7 +294,7 @@ footer {
     main {
         .hero {
             .textos-esquerda {
-                h1 {
+                h2 {
                     font-size: 20px;
                 }
 
@@ -305,7 +317,7 @@ footer {
                 height: 210px;
                 width: 320px;
 
-                h1 {
+                h3 {
                     font-size: 16px;
                 }
 
@@ -341,6 +353,8 @@ footer {
 
     header {
         .cabecalho-menu-esquerda {
+            transform: translateX(50%);
+
             img {
                 display: none;
             }
@@ -353,6 +367,10 @@ footer {
         .cabecalho-menu-direita {
             display: none;
         }
+
+        .menu-hamburguer {
+            display: block;
+        }
     }
 
     main {
@@ -361,18 +379,14 @@ footer {
             display: none;
         }
 
-        .destaques {
-            display: none;
-        }
-
-        .conteudo-responsivo {
+        .conteudo-mobile {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             flex: 1;
             width: 100%;
-            margin-top: 37%;
+            margin-top: 47%;
 
             img {
                 width: 40%;
@@ -404,12 +418,30 @@ footer {
             }
         }
 
-        footer {
-            height: auto;
-            min-height: 40px;
-            position: static;
-            font-size: 14px;
-            background: transparent;
+        .destaques {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-top: none;
+            margin-top: 25%;
+            margin-bottom: 10%;
+
+            .destaques-item {
+                margin: 6% 0;
+
+                h3 {
+                    font-size: 0.9rem;
+                }
+            }
         }
+    }
+
+    footer {
+        height: auto;
+        min-height: 50px;
+        position: static;
+        font-size: 16px;
+        background: transparent;
     }
 }

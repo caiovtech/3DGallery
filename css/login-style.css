@@ -36,6 +36,7 @@ header {
         display: flex;
         align-items: center;
         gap: 50px;
+        transform: translateX(-30%);
 
         img {
             width: 70px;
@@ -53,6 +54,7 @@ header {
         display: flex;
         align-items: center;
         gap: 50px;
+        transform: translateX(30%);
 
         a {
             font-size: 22px;
@@ -63,6 +65,16 @@ header {
         a:hover {
             color: #b26be4;
         }
+    }
+
+    .menu-hamburguer {
+        display: none;
+        background: none;
+        border: none;
+        color: #EAEAEA;
+        font-size: 30px;
+        cursor: pointer;
+        transform: translateX(95%);
     }
 }
 
@@ -116,10 +128,7 @@ main {
             gap: 15px;
 
             h1 {
-                font-family: "Encode Sans SC", sans-serif;
-                color: #EAEAEA;
-                font-size: 40px;
-                font-weight: 420;
+                display: none;
             }
 
             input {
@@ -176,6 +185,191 @@ main {
                 background: #2a2a2a;
                 color: #b26be4;
                 border-radius: 5px;
+            }
+        }
+    }
+}
+
+/* Resolução 1600x900px */
+
+@media (max-width: 1600px) {
+    header {
+        .cabecalho-menu-esquerda {
+            img {
+                width: 55px;
+            }
+
+            a {
+                font-family: "Encode Sans SC", sans-serif;
+                color: #EAEAEA;
+                font-size: 33px;
+            }
+        }
+
+        .cabecalho-menu-direita {
+            a {
+                font-size: 21px;
+                font-family: "Rethink Sans", sans-serif;
+                color: #EAEAEA;
+            }
+        }
+    }
+
+    main {
+        .container-esquerda {
+            img {
+                width: 130px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+        }
+
+        .container-direita {
+            .area-de-login {
+                input {
+                    width: 210px;
+                    height: 33px;
+                }
+
+                button {
+                    font-size: 17px;
+                    width: 210px;
+                    height: 42px;
+                }
+
+                a {
+                    font-size: 14.5px;
+                }
+            }
+
+            .links-inferiores {
+                a {
+                    font-size: 14.5px;
+                }
+            }
+        }
+    }
+}
+
+/* Resolução 1280x720px */
+
+@media (max-width: 1280px) {
+    header {
+        .cabecalho-menu-esquerda {
+            img {
+                width: 45px;
+            }
+
+            a {
+                font-family: "Encode Sans SC", sans-serif;
+                color: #EAEAEA;
+                font-size: 27px;
+            }
+        }
+
+        .cabecalho-menu-direita {
+            a {
+                font-size: 18px;
+                font-family: "Rethink Sans", sans-serif;
+                color: #EAEAEA;
+            }
+        }
+    }
+
+    main {
+        .container-esquerda {
+            img {
+                width: 110px;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+        }
+
+        .container-direita {
+            .area-de-login {
+                input {
+                    width: 190px;
+                    height: 30px;
+                }
+
+                button {
+                    font-size: 14px;
+                    width: 190px;
+                    height: 38px;
+                }
+
+                a {
+                    font-size: 13px;
+                }
+            }
+
+            .links-inferiores {
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+/* Resolução Mobile */
+
+@media (max-width: 450px) {
+    header {
+        .cabecalho-menu-esquerda {
+            transform: translateX(50%);
+
+            img {
+                display: none;
+            }
+
+            a {
+                font-size: 1.5rem;
+            }
+        }
+
+        .cabecalho-menu-direita {
+            display: none;
+        }
+
+        .menu-hamburguer {
+            display: block;
+        }
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+
+        .container-esquerda {
+            img {
+                display: none;
+            }
+        }
+
+        .container-direita {
+            height: 100%;
+            width: 100%;
+
+            .area-de-login {
+                height: 100%;
+                width: 100%;
+                border: none;
+                display: flex;
+                justify-content: start;
+
+                h1 {
+                    display: block;
+                    font-family: "Encode Sans SC", sans-serif;
+                    color: #EAEAEA;
+                    font-size: 28px;
+                    font-weight: 400;
+                    margin-top: 20%;
+                }
             }
         }
     }
