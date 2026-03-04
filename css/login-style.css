@@ -36,7 +36,6 @@ header {
         display: flex;
         align-items: center;
         gap: 50px;
-        transform: translateX(-30%);
 
         img {
             width: 70px;
@@ -54,7 +53,6 @@ header {
         display: flex;
         align-items: center;
         gap: 50px;
-        transform: translateX(30%);
 
         a {
             font-size: 22px;
@@ -74,7 +72,6 @@ header {
         color: #EAEAEA;
         font-size: 30px;
         cursor: pointer;
-        transform: translateX(95%);
     }
 }
 
@@ -126,6 +123,10 @@ main {
             border: 2.5px solid #282828;
             border-radius: 25px;
             gap: 15px;
+
+            img {
+                display: none;
+            }
 
             h1 {
                 display: none;
@@ -321,8 +322,6 @@ main {
 @media (max-width: 450px) {
     header {
         .cabecalho-menu-esquerda {
-            transform: translateX(50%);
-
             img {
                 display: none;
             }
@@ -334,6 +333,21 @@ main {
 
         .cabecalho-menu-direita {
             display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 100%;
+            background: #1E1E1E;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+            border-bottom: 2px solid #6A0DAD;
+            transition: all 0.3s ease;
+
+            &.menu-aberto {
+                display: flex;
+            }
         }
 
         .menu-hamburguer {
@@ -362,15 +376,37 @@ main {
                 display: flex;
                 justify-content: start;
 
+                img {
+                    display: block;
+                    width: 150%;
+                }
+
                 h1 {
                     display: block;
                     font-family: "Encode Sans SC", sans-serif;
                     color: #EAEAEA;
-                    font-size: 28px;
+                    font-size: 36px;
                     font-weight: 400;
-                    margin-top: 20%;
+                }
+
+                input {
+                    width: 90%;
+                    height: 38px;
+                }
+
+                button {
+                    width: 90%;
+                    height: 50px;
+                }
+
+                a {
+                    margin-top: 3.7%;
                 }
             }
+        }
+
+        .links-inferiores {
+            margin-bottom: 8%;
         }
     }
 }
