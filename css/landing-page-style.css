@@ -262,9 +262,9 @@ footer {
     }
 }
 
-/* Resolução 1280x720px */
+/* Resolução 1366x768px */
 
-@media (max-width: 1280px) {
+@media (max-width: 1366px) {
     header {
         .cabecalho-menu-esquerda {
             img {
