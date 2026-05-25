@@ -410,7 +410,10 @@ footer {
                 margin-bottom: 20%;
             }
 
-            button {
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-color: #6A0DAD;
                 color: #EAEAEA;
                 font-size: 15px;
@@ -423,7 +426,7 @@ footer {
                 transition: background-color 0.3s;
             }
 
-            button:hover {
+            a:hover {
                 background-color: #8A2BE2;
             }
         }
