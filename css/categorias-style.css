@@ -82,7 +82,7 @@ header {
 
 main {
     flex: 0 1 auto;
-    padding-top: 100px;
+    padding-top: 85px;
 
     h1 {
         margin-top: 100px;
@@ -98,10 +98,9 @@ main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: auto;
-        column-gap: 80px;
         row-gap: 40px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 3%;
+        margin-right: 3%;
         margin-bottom: 75px;
         justify-items: center;
         align-items: center;
@@ -123,6 +122,11 @@ main {
             font-weight: 600;
             background-color: rgba(58, 57, 57, 0.300);
             box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.2);
+            transition: 0.12s ease-in;
+        }
+
+        a:hover {
+            background-color: rgba(112, 110, 110, 0.3);
         }
 
         #personagens {
@@ -199,6 +203,104 @@ main {
     }
 }
 
+/* Resolução 1600x900px */
+
+@media (max-width: 1600px) {
+    header {
+        .cabecalho-menu-esquerda {
+            img {
+                width: 55px;
+            }
+
+            a {
+                font-family: "Encode Sans SC", sans-serif;
+                color: #EAEAEA;
+                font-size: 33px;
+            }
+        }
+
+        .cabecalho-menu-direita {
+            a {
+                font-size: 20px;
+                font-family: "Rethink Sans", sans-serif;
+                color: #EAEAEA;
+            }
+        }
+    }
+
+    main {
+        padding-top: 70px;
+
+        h1 {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            font-size: 50px;
+        }
+
+        .container {
+            row-gap: 25px;
+            margin-bottom: 50px;
+
+            a {
+                height: 192px;
+                width: 375px;
+                margin-left: 20px;
+                margin-right: 20px;
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+/* Resolução 1366x768px */
+
+@media (max-width: 1366px) {
+    header {
+        .cabecalho-menu-esquerda {
+            img {
+                width: 40px;
+            }
+
+            a {
+                font-family: "Encode Sans SC", sans-serif;
+                color: #EAEAEA;
+                font-size: 28px;
+            }
+        }
+
+        .cabecalho-menu-direita {
+            a {
+                font-size: 16px;
+                font-family: "Rethink Sans", sans-serif;
+                color: #EAEAEA;
+            }
+        }
+    }
+
+    main {
+        padding-top: 55px;
+
+        h1 {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            font-size: 40px;
+        }
+
+        .container {
+            row-gap: 25px;
+            margin-bottom: 50px;
+
+            a {
+                height: 164px;
+                width: 320px;
+                margin-left: 15px;
+                margin-right: 15px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
 /* Resolução Mobile */
 
 @media (max-width: 450px) {
@@ -246,13 +348,13 @@ main {
 
         .container {
             grid-template-columns: 1fr;
-            column-gap: 0;
 
             a {
                 width: 90%;
                 height: 180px;
                 margin-left: 0;
                 margin-right: 0;
+                margin-bottom: 10px;
             }
         }
     }
